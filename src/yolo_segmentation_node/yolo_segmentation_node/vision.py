@@ -23,8 +23,8 @@ class YOLOSegmentationNode(Node):
         self.image_publisher = self.create_publisher(Image, '/yolo_segmentation/output_image', 10)
         
         # Paths to your models
-        ground_model_path = "../../ground_best.pt"
-        pallet_model_path = "../../pallet_best.pt"
+        ground_model_path = "../../../ground_best.pt"
+        pallet_model_path = "../../../pallet_best.pt"
         
         # Load YOLO models
         self.ground_model = YOLO(ground_model_path)
