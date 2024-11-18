@@ -14,7 +14,7 @@ class YOLOSegmentationNode(Node):
         super().__init__('yolo_segmentation_node')
         self.subscription = self.create_subscription(
             Image,
-            '/d455_1_rgb_image',
+            '/zed2i/zed_node/left/image_rect_color',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
@@ -23,8 +23,8 @@ class YOLOSegmentationNode(Node):
         self.image_publisher = self.create_publisher(Image, '/yolo_segmentation/output_image', 10)
         
         # Paths to your models
-        ground_model_path = "../../ground_best.pt"
-        pallet_model_path = "../../pallet_best.pt"
+        ground_model_path = "/home/tan/runs/segment/train11/weights/best.pt"
+        pallet_model_path = "/home/tan/loco-small-seg/runs/segment/train/weights/best.pt"
         
         # Load YOLO models
         self.ground_model = YOLO(ground_model_path)

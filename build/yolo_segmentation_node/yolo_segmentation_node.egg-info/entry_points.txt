@@ -1,0 +1,3 @@
+[console_scripts]
+yolo_segmentation_node = yolo_segmentation_node.vision:main
+

@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing yolo_segmentation_node.egg-info/PKG-INFO
+writing dependency_links to yolo_segmentation_node.egg-info/dependency_links.txt
+writing entry points to yolo_segmentation_node.egg-info/entry_points.txt
+writing requirements to yolo_segmentation_node.egg-info/requires.txt
+writing top-level names to yolo_segmentation_node.egg-info/top_level.txt
+reading manifest file 'yolo_segmentation_node.egg-info/SOURCES.txt'
+writing manifest file 'yolo_segmentation_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo-segmentation-node.egg-link (link to .)
+Installing yolo_segmentation_node script to /home/tan/ros2_humble/install/yolo_segmentation_node/lib/yolo_segmentation_node
+
+Installed /home/tan/ros2_humble/build/yolo_segmentation_node
+running symlink_data
+symbolically linking /home/tan/ros2_humble/build/yolo_segmentation_node/resource/yolo_segmentation_node -> /home/tan/ros2_humble/install/yolo_segmentation_node/share/ament_index/resource_index/packages
+symbolically linking /home/tan/ros2_humble/build/yolo_segmentation_node/package.xml -> /home/tan/ros2_humble/install/yolo_segmentation_node/share/yolo_segmentation_node

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info
+writing ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/dependency_links.txt
+writing entry points to ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/entry_points.txt
+writing requirements to ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/requires.txt
+writing top-level names to ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/top_level.txt
+writing manifest file '../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/SOURCES.txt'
+reading manifest file '../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/tan/ros2_humble/build/yolo_segmentation_node/build
+creating /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib
+creating /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib/yolo_segmentation_node
+copying yolo_segmentation_node/__init__.py -> /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib/yolo_segmentation_node
+copying yolo_segmentation_node/vision.py -> /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib/yolo_segmentation_node
+running install
+running install_lib
+creating /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node
+copying /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib/yolo_segmentation_node/__init__.py -> /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node
+copying /home/tan/ros2_humble/build/yolo_segmentation_node/build/lib/yolo_segmentation_node/vision.py -> /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node
+byte-compiling /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node/vision.py to vision.cpython-310.pyc
+running install_data
+creating /home/tan/ros2_humble/install/yolo_segmentation_node/share/ament_index
+creating /home/tan/ros2_humble/install/yolo_segmentation_node/share/ament_index/resource_index
+creating /home/tan/ros2_humble/install/yolo_segmentation_node/share/ament_index/resource_index/packages
+copying resource/yolo_segmentation_node -> /home/tan/ros2_humble/install/yolo_segmentation_node/share/ament_index/resource_index/packages
+copying package.xml -> /home/tan/ros2_humble/install/yolo_segmentation_node/share/yolo_segmentation_node
+running install_egg_info
+Copying ../../build/yolo_segmentation_node/yolo_segmentation_node.egg-info to /home/tan/ros2_humble/install/yolo_segmentation_node/lib/python3.10/site-packages/yolo_segmentation_node-0.0.0-py3.10.egg-info
+running install_scripts
+Installing yolo_segmentation_node script to /home/tan/ros2_humble/install/yolo_segmentation_node/lib/yolo_segmentation_node
+writing list of installed files to '/home/tan/ros2_humble/build/yolo_segmentation_node/install.log'
