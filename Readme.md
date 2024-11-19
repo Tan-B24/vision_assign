@@ -17,7 +17,22 @@ This ROS2 package implements the vision assignment, involving object detection a
     A custom `.yaml` file was created, referencing the dataset folders: `/train`, `/val`, and `/test`. Each folder contained images and corresponding labels, structuring the data for YOLO training.
 
 5. #### Model Training and Iterative Improvement
-    The YOLOv11-seg model was trained iteratively, using the dataset to detect and segment `pallet` and `ground` classes. Hyperparameters and data augmentation were adjusted to improve model performance, resulting in .pt files representing trained model weights.
+    The YOLOv11-seg model was trained iteratively, using the dataset to detect and segment `pallet` and `ground` classes. Hyperparameters and data augmentation were adjusted to improve model performance, resulting in .pt files representing trained model weights. The following settings were used:
+    - **Epochs**: 350 (`epochs=350`)
+    - **Image Size**: 640 (`imgsz=640`)
+    - **Batch Size**: 12 (`batch=12`)
+    - **Initial Learning Rate**: 0.00005 (`lr0=0.00005`)
+    - **Cosine Learning Rate Scheduler**: enabled (`cos_lr=True`)
+    - **Patience**: 200 (`patience=200`)
+    - **Optimizer**: AdamW (`optimizer=AdamW`)
+    - **Momentum**: 0.9 (`momentum=0.9`)
+    - **Weight Decay**: 0.0005 (`weight_decay=0.0005`)
+    - **Augmentation**: enabled (`augment=True`)
+    - **Auto Augmentation**: enabled (`auto_augment=True`)
+    - **IOU Threshold**: 0.6 (`iou=0.6`)
+    - **Device**: GPU 0 (`device=0`)
+    - **Cache**: enabled (`cache=True`)
+    - **Automatic Mixed Precision (AMP)**: disabled (`amp=False`)
 
 5. #### Testing and Model Selection
     The trained `.pt` models were evaluated on the test dataset, and the best-performing model was selected for further predictions. This selection ensured accurate detection and segmentation for the vision task.
@@ -70,4 +85,4 @@ colcon build --symlink-install
 
 The following video shows the implemented models working in an environment downloaded from `https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/resources/r2bdataset2023`, ROS2 bag file used: r2b_storage
 
-[video](<../Videos/Screencasts/Screencast from 11-17-2024 08:13:30 PM.webm>)
+<video controls src="Results.mp4" title="Title"></video>
