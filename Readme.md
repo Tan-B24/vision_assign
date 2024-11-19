@@ -90,3 +90,10 @@ The following video shows the implemented models working in an environment downl
 
 https://github.com/user-attachments/assets/daeb7951-d4e7-4093-ae6e-7a8d147ec1f1
 
+#### Optional
+
+To generate trt files from onnx files use the following command:
+```bash
+trtexec --onnx=../vision_assign/ground.onnx --saveEngine=ground.trt --fp16
+trtexec --onnx=../vision_assign/pallet.onnx --saveEngine=pallet.trt --fp16
+```
