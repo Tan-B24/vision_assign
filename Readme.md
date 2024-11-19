@@ -2,6 +2,9 @@
 
 This ROS2 package implements the vision assignment, involving object detection and segmentation using a YOLOv11 model. The entire workflow, from annotation to prediction, is described below in detail.
 
+## NOTE: 
+Please use conda environment python 3.10
+
 ## Overview
 
 1. #### Annotation with GroundingDINO and Manual Tools
