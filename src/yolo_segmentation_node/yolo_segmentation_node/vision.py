@@ -4,8 +4,6 @@ from sensor_msgs.msg import Image
 import cv2
 import numpy as np
 from ultralytics import YOLO
-import pycuda.driver as cuda
-import pycuda.autoinit
 from cv_bridge import CvBridge
 from std_msgs.msg import Header
 
