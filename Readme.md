@@ -85,4 +85,5 @@ colcon build --symlink-install
 
 The following video shows the implemented models working in an environment downloaded from `https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/resources/r2bdataset2023`, ROS2 bag file used: r2b_storage
 
-<video controls src="Results.mp4" title="Title"></video>
+https://github.com/user-attachments/assets/daeb7951-d4e7-4093-ae6e-7a8d147ec1f1
+
