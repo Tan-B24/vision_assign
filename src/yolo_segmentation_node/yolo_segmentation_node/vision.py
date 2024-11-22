@@ -6,19 +6,21 @@ import numpy as np
 from ultralytics import YOLO
 from cv_bridge import CvBridge
 from std_msgs.msg import Header
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 class YOLOSegmentationNode(Node):
     def __init__(self):
         super().__init__('yolo_segmentation_node')
+        qos_profile = QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT)
         self.subscription = self.create_subscription(
             Image,
-            '/d455_1_rgb_image',
+            '/robot1/zed2i/left/image_rect_color',
             self.listener_callback,
-            10)
+            qos_profile)
         self.subscription  # prevent unused variable warning
         
         # Publisher for the processed image
-        self.image_publisher = self.create_publisher(Image, '/yolo_segmentation/output_image', 10)
+        self.image_publisher = self.create_publisher(Image, '/yolo_segmentation/output_image', qos_profile)
         
         # Paths to your models
         ground_model_path = "../vision_assign/ground_best.pt"
